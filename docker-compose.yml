@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  main:
+    image: markbirbeck/sully
+    ports:
+      - "9229:9229"
+    volumes:
+      # Map the current working directory in as the UUT:
+      #
+      - ${PWD}:/usr/src/uut
